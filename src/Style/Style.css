@@ -1,0 +1,51 @@
+/* common styles */
+:root{
+    --primary:#066897 ;
+    --secondary:#581845  ;
+    --warning:#F97A0C ;
+    --danger:#D5092A ;
+    --success:#0CEDF9 ;
+}
+.head{
+    color: var(--primary);
+    margin: 5px 0;
+}
+.text{
+    color: var(--secondary);
+    font-weight: 600;
+}
+.sector{
+    margin: 10px 0;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: left;
+}
+.underline{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.underline::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary);
+    left: 0;
+    right: 0;
+    bottom: 2px;
+}
+
+.language{
+    color: var(--secondary);
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.language-type{
+    color: var(--warning);
+    font-size: 25px;
+    font-weight: 800;
+}
